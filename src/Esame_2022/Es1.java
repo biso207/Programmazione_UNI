@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Es1Prova2022 {
+public class Es1 {
 	public static void main(String[] args) {
 		 // lista per le stringhe
 		ArrayList<String> arrayStringhe = new ArrayList<String>();

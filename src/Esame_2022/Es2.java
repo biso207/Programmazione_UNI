@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Es2Prova2022 {
+public class Es2 {
 	public void main(String[] args) {
 		int N, M; // numero colonne e righe matrice
 		Scanner scanner = new Scanner(System.in);
