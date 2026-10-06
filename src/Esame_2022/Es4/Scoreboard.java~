@@ -1,0 +1,10 @@
+/*
+Luca Bisognin - 6/10/2026
+Interfaccia per definire i metodi per la gestione di una classifica
+*/
+
+public interface Scoreboard {
+	void addToScore();
+	void printScore();
+	void printTopTen();
+}
