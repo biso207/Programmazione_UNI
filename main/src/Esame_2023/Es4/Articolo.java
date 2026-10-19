@@ -13,7 +13,7 @@ public class Articolo {
 	
 	// getters //
 	public String getID() {
-		return id;
+		return ID;
 	}
 	
 	public double getPrice() {

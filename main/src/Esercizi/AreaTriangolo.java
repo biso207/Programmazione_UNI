@@ -8,7 +8,7 @@ package Esercizi;
 import java.util.*;
 
 public class AreaTriangolo {
-   public static void main(String[] args) {
+   static void main() {
         // scanner per l'input utente
         Scanner s = new Scanner(System.in);
 

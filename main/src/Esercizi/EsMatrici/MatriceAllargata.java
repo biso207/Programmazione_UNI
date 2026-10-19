@@ -1,12 +1,14 @@
-package Esercizi.EsMatrici;/*
+/*
 Luca Bisognin - 19/10/2026
 Es MatriceAllargata
 */
 
+package Esercizi.EsMatrici;
+
 import java.util.*;
 
 class MatriceAllargata {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		Random rand = new Random();
 		
@@ -31,15 +33,15 @@ class MatriceAllargata {
 		
 		final int NB = N+x;
 		int[][] matrixB = new int[NB][NB];
-		
-		int dimA=N*N, dimB=NB*NB;
-		int diff = dimB-dimA;
-		
+
+		// todo: finire l'allargamento
 		// riempimento matrice B
 		for (int i=0; i<NB; i++) {
 			for (int j=0; j<NB; j++) {
+				/*
 				if (i+j ==) matrixB[i][j] = matrixA[i][j];
 				else matrixB[i][j] = 0;
+				 */
 			}
 		}
 		

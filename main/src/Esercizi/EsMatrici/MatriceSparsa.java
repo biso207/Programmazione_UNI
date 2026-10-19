@@ -1,12 +1,14 @@
-package Esercizi.EsMatrici;/*
+/*
 Luca Bisognin - 19/10/2026
 Es MatriceSparsa
 */
 
+package Esercizi.EsMatrici;
+
 import java.util.*;
 
 class MatriceSparsa {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		Random rand = new Random();
 		

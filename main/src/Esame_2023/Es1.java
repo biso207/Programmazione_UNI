@@ -3,7 +3,7 @@ package Esame_2023;
 import java.util.*;
 
 public class Es1 {
-	public static void main(String[] args) {
+	static void main() {
 		// dichiarazione variabili e istanze
 		Scanner scanner = new Scanner(System.in);
 		Random r = new Random();

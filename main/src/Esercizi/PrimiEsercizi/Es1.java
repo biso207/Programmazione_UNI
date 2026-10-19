@@ -1,7 +1,9 @@
+package Esercizi.PrimiEsercizi;
+
 import java.util.*;
 
 public class Es1 {
-	public static void main(String[] args) {
+	static void main() {
 		int baseMinore, baseMaggiore, altezza;
 		double area;
 		

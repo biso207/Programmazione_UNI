@@ -1,12 +1,14 @@
-package Esercizi.Liste;/*
+/*
 Luca Bisognin - 19/10/2026
 Esercizio Lezione del 19/10/2026
 */
 
+package Esercizi.Liste;
+
 import java.util.*;
 
 public class ListaNatale {
-	public static void main(String[] args) {
+	static void main() {
 		// init istanze //
 		Scanner scanner = new Scanner(System.in);
 		ArrayList<String> listaNatale = new ArrayList<>();

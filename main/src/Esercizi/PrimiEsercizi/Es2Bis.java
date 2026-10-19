@@ -1,7 +1,9 @@
+package Esercizi.PrimiEsercizi;
+
 import java.util.*;
 
 public class Es2Bis {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Inserire un numero: ");

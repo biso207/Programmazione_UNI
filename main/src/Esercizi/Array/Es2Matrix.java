@@ -1,12 +1,14 @@
-package Esercizi.Array;/*
+/*
 Luca Bisognin - 13/10/2026
 Es Pag 30 - Array
 */
 
+package Esercizi.Array;
+
 import java.util.*;
 
 public class Es2Matrix {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		

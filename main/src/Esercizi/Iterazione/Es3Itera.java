@@ -3,7 +3,7 @@ package Esercizi.Iterazione;
 import java.util.*;
 
 public class Es3Itera {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Inserire la prima stringa (x): ");

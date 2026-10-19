@@ -1,12 +1,14 @@
-package Esercizi.Array;/*
+/*
 Luca Bisognin - 12/10/2026
 Es Pag 17 - Array
 */
 
+package Esercizi.Array;
+
 import java.util.*;
 
 public class Es1Array {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		int n;

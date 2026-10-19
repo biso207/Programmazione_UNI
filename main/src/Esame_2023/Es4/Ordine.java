@@ -5,13 +5,13 @@ import java.util.*;
 public class Ordine {
 	// attributi //
 	private final String ID;
-	private List<Item> listOrderedItems;
+	private final List<Item> listOrderedItems;
 	private double finalPrice; // conteggiato in base al prezzo dei singoli articoli
 	
 	// costruttore //
 	public Ordine(String ID) {
 		this.ID = ID;
-		listOrderedItems = new ArrayList<Items>();
+		listOrderedItems = new ArrayList<>();
 		finalPrice = 0;
 	}
 	
@@ -30,18 +30,21 @@ public class Ordine {
 	public List<Item> getListOrderedItems() {
 		return listOrderedItems;
 	}
-	
+
 	public double getFinalPrice() {
+		finalPrice = 0;
+
 		for (Item i : listOrderedItems) {
-			finalPrice+=i.getPrice();
+			finalPrice += i.getPrice();
 		}
-		
+
 		return finalPrice;
 	}
 	
 	// metodo toString per recuperare le info di un ordine //
 	@Override
 	public String toString() {
+		getFinalPrice();
 		StringBuilder s = new StringBuilder("Ordine "+ID+"\n");
 		
 		// aggiunta info elementi alla stringa //

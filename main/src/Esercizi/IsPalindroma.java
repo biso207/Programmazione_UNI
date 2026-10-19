@@ -1,7 +1,9 @@
-package Esercizi;/*
+/*
 Luca Bisognin - 15/10/2026
 Esercizi inversione - controllo stringa palindroma
 */
+
+package Esercizi;
 
 import java.util.*;
 

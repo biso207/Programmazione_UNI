@@ -3,13 +3,13 @@ package Esame_2023.Es4;
 import java.util.*;
 
 public class Demo {
-	public static void main(String[] args) {
-		// creazione 6 elementi
+	static void main() {
+		// creazione 8 elementi
 		Item i1 = new Item("1", ItemType.STANDARD, 50, 0, null);
 		Item i2 = new Item("2", ItemType.SCONTATO, 600, 10, null);
 		Item i3 = new Item("3", ItemType.STANDARD, 100, 0, null);
 		
-		List<Item> listItemsTris = new ArrayList<Item>();
+		ArrayList<Item> listItemsTris = new ArrayList<Item>();
 		listItemsTris.add(i1);
 		listItemsTris.add(i2);
 		listItemsTris.add(i3);
@@ -31,8 +31,8 @@ public class Demo {
 		Ordine o2 = new Ordine("2");
 		o2.addItemToOrder(i5);
 		o2.addItemToOrder(i6);
-		o1.addItemToOrder(i7);
-		o1.addItemToOrder(i8);
+		o2.addItemToOrder(i7);
+		o2.addItemToOrder(i8);
 		
 		// creazione negozio
 		NegozioMare ng = new NegozioMare();

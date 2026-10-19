@@ -3,7 +3,7 @@ package Esercizi.Iterazione;
 import java.util.*;
 
 public class Es1Itera {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		int num, sum=0, cont=0;

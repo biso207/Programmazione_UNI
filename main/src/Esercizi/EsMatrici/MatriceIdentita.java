@@ -1,10 +1,12 @@
-package Esercizi.EsMatrici;/*
+/*
 Luca Bisognin - 19/10/2026
 Es MatriceIdentita
 */
 
+package Esercizi.EsMatrici;
+
 class MatriceIdentita {
-	public static void main(String[] args) {
+	static void main() {
 		final int N = 4;
 		int[][] matrix  = new int[N][N];
 		

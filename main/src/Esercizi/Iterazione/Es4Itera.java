@@ -3,7 +3,7 @@ package Esercizi.Iterazione;
 import java.util.*;
 
 public class Es4Itera {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		String s1="", s2="";

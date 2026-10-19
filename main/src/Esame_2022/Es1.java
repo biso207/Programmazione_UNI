@@ -3,7 +3,7 @@ package Esame_2022;
 import java.util.*;
 
 public class Es1 {
-	public static void main(String[] args) {
+	static void main() {
 		 // lista per le stringhe
 		ArrayList<String> arrayStringhe = new ArrayList<String>();
 		// hashmap per mappare stringa e il suo numero di vocali

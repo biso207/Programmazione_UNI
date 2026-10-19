@@ -1,7 +1,9 @@
+package Esercizi.PrimiEsercizi;
+
 import java.util.*;
 
 public class Es2 {
-	public static void main(String[] args) {
+	static void main() {
 		float x, y;
 		Scanner scanner = new Scanner(System.in);
 		

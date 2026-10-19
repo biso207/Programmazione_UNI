@@ -1,7 +1,9 @@
+package Esercizi.PrimiEsercizi;
+
 import java.util.*;
 
 public class Es3Bis {
-	public static void main(String[] args) {
+	static void main() {
 		Scanner scanner = new Scanner(System.in);
 		
 		int x1, x2;
