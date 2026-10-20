@@ -19,20 +19,32 @@ public class ListaNatale {
 			System.out.print("Stringa: ");
 			nuovoInvitato = scanner.nextLine();
 		
-			if (nuovoInvitato.toLowerCase().equals("stop")) break;
+			if (nuovoInvitato.equalsIgnoreCase("stop")) break;
 			
 			listaNatale.add(nuovoInvitato);
 		}
-		
-		// controlli sull'arraylist //
+
+		//listaNatale.removeIf(grinch -> grinch.equalsIgnoreCase("grinch")); // rimozione di ogni 'Grinch'
+
+		// rimozione primo 'Grinch' dalla lista //
+		for (int i=0; i<listaNatale.size(); i++) {
+			if (listaNatale.get(i).equalsIgnoreCase("grinch")) {
+				listaNatale.remove(i);
+				break;
+			}
+		}
+
+		// aggiunta 'Alan' se non in lista
 		boolean isAlan = false;
-		
-		listaNatale.removeIf(grinch -> grinch.equalsIgnoreCase("grinch")); // rimozione del 1° "Grinch"
+
 		for (String s : listaNatale) {
-			if (s.toLowerCase().equals("alan")) isAlan = true;
+            if (s.equalsIgnoreCase("alan")) {
+                isAlan = true;
+                break;
+            }
 		}
 		
-		if (!isAlan) listaNatale.add("Alan"); // aggiunta di Alan se non è il lista
+		if (!isAlan) listaNatale.add("Alan");
 		
 		// stampa lista in ordine inverso //
 		System.out.println("\nLista Invertita: ");
