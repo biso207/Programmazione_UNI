@@ -3,7 +3,7 @@ Luca Bisognin - 26/10/2026
 Es 2b Esame Parziale 2023
 */
 
-package EsameParziale;
+package EsameParziale2023;
 
 import java.util.*;
 
@@ -42,7 +42,6 @@ public class Es2B {
         }
 
         System.out.println("Elementi A[i][j] per la somma della i-esima riga è uguale alla somma della j-esima colonna");
-        int sumI=0, sumJ=0;
         for (int i=0; i<N; i++) {
             for (int j=0; j<N; j++) {
                 if (sumRighe[i]==sumColonne[j]) System.out.println(matrix[i][j]);

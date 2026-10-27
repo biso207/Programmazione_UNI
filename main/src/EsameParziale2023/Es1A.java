@@ -3,7 +3,7 @@ Luca Bisognin - 26/10/2026
 Es 1a Esame Parziale 2023
 */
 
-package EsameParziale;
+package EsameParziale2023;
 
 import java.util.*;
 
@@ -20,21 +20,19 @@ public class Es1A {
             if (N > 0 && N <=10) break;
         }
 
-        int cont=0;
         double varianza=0, media, sum=0;
 
         // recupero N valori //
-        double[] numeri = new double[N]; // per il salvataggio dei singoli numeri
+        int[] numeri = new int[N]; // per il salvataggio dei singoli numeri
 
         for (int i=0; i<N; i++) {
             System.out.print("Inserisci un numero: ");
-            double num = scanner.nextInt();
+            int num = scanner.nextInt();
             numeri[i] = num;
 
             sum += num;
-            cont++;
         }
-        media = sum/cont;
+        media = sum/N;
 
         // calcolo varianza //
         for (int j=0; j<N; j++) {

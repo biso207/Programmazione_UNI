@@ -3,7 +3,7 @@ Luca Bisognin - 26/10/2026
 Es 2a Esame Parziale 2023
 */
 
-package EsameParziale;
+package EsameParziale2023;
 
 import java.util.*;
 
