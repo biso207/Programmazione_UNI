@@ -16,7 +16,7 @@ public class Es1B {
         double media;
 
         // inserimento stringhe //
-        while (true) {
+        do {
             System.out.print("Digita una stringa: ");
             s1 = scanner.nextLine();
 
@@ -28,7 +28,7 @@ public class Es1B {
                 contStrings++;
             }
             s2=s1; // aggiornamento stringa precedente
-        }
+        } while(true);
 
         media = (double) sumLengths/contStrings;
 
