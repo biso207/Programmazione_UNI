@@ -8,7 +8,7 @@ package Esercizi;
 import java.util.*;
 
 public class IsPalindroma {
-	public void main(String[] args) {
+	void main() {
 		Scanner scanner = new Scanner(System.in);
 		String s = "";
 		
