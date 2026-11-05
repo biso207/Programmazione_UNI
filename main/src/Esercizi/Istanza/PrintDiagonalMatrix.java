@@ -8,26 +8,26 @@ package Esercizi.Istanza;
 import java.util.*;
 
 public class PrintDiagonalMatrix {
-    public static final String RESET = "\u001B[0m";
-    public static final String COLOR = "\u001B[33m"; // yellow
-    private static final Random rnd = new Random();
-    private static Object[][] matrix;
+    private final String RESET = "\u001B[0m";
+    private final String COLOR = "\u001B[33m"; // yellow
+    private Object[][] matrix;
 
     // IMPOSTARE QUA LA DIMENSIONE DELLA MATRICE //
-    private static final int N = 20;
+    private final int N = 20;
 
     // range generatore - max è escluso //
-    private static final int MIN = 100, MAX = 128;
+    private final int MIN = 100, MAX = 128;
 
     // entry point //
     void main() {
-        matrix = new Object[N][N];
-        setMatrix(); // riempimento matrice con numeri random 0-9
-        Object[] diagonal = getDiagonal(); // recupero diagonale principale
+        PrintDiagonalMatrix p = new PrintDiagonalMatrix();
+
+        p.setMatrix(); // riempimento matrice con numeri random 0-9
+        Object[] diagonal = p.getDiagonal(); // recupero diagonale principale
 
         // stampa matrice //
         System.out.println("Matrice");
-        printMatrix();
+        p.printMatrix();
 
         // stampa diagonale secondaria //
         System.out.println("\nDiagonale Secondaria");
@@ -35,14 +35,16 @@ public class PrintDiagonalMatrix {
     }
 
     // metodo per riempire con valori random la matrice //
-    public static void setMatrix() {
+    public void setMatrix() {
+        Random rnd = new Random();
+        matrix = new Object[N][N];
         for (int i=0; i< N; i++) {
             for (int j=0; j<N; j++) matrix[i][j] = rnd.nextInt(MIN, MAX);
         }
     }
 
     // metodo per stampare la matrice //
-    public static void printMatrix() {
+    public void printMatrix() {
         for (int i=0; i< N; i++) {
             for (int j=0; j<N; j++) {
                 if (i+j == i+(N-i-1)) System.out.print(COLOR + "["+ matrix[i][j] + "] " + RESET);
@@ -53,7 +55,7 @@ public class PrintDiagonalMatrix {
     }
 
     // metodo per recuperare la diagonale secondaria //
-    public static Object[] getDiagonal() {
+    public Object[] getDiagonal() {
         Object[] array = new Object[N];
 
         for (int i=0; i<N; i++) array[i] = matrix[i][N-i-1];

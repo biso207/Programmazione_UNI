@@ -14,19 +14,17 @@ public class Es2B {
 
         // inserimento da tastiera N (>0) //
         int N;
-        while(true) {
+        do {
             System.out.print("Inserire un numero maggiore di zero: ");
             N = scanner.nextInt();
+        } while (N <= 0);
 
-            if (N>0) break;
-        }
-
-        System.out.println("Matrice");
         // riempimento, stampa e somma valori righe/colonne della matrice di numeri casuale tra -3 e 10 (compresi) //
         int[][] matrix = new int[N][N];
         int[] sumRighe = new int[N];
         int[] sumColonne = new int[N];
 
+        System.out.println("Matrice");
         for (int i=0; i<N; i++) {
             for (int j=0; j<N; j++) {
                 matrix[i][j] = rnd.nextInt(-3, 11);
