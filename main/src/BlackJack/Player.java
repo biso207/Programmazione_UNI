@@ -21,20 +21,11 @@ public class Player {
     }
 
     public boolean setBet(int bet) {
-        if (bet <= 0 || bet>balance) return false;
+        if (bet>balance) return false;
 
         this.bet = bet;
         balance -= bet; // riduzione saldo
 
-        return true;
-    }
-
-    // Raddoppia la puntata prelevando dal saldo soltanto la seconda metà.
-    public boolean doubleBet() {
-        if (bet <= 0 || bet > balance) return false;
-
-        balance -= bet;
-        bet *= 2;
         return true;
     }
 
