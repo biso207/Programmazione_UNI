@@ -15,6 +15,10 @@ public class PrimiEsercizi {
         // es #2 10/11 //
         int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
         System.out.println("\nSomma array: " + sommaArray(a, 0));
+
+        // es #2 10/11 //
+        int[] a2 = {10, 15, 0, 44, 0, 33, 1, 48, 19, 0};
+        System.out.println("Zeri nell'array: " + contaZeri(a2, 0));
     }
 
     // ESERCIZIO 9/11 //
@@ -53,6 +57,15 @@ public class PrimiEsercizi {
     public int sommaArray(int[] a, int i) {
         if (i<a.length) {
             return a[i] + sommaArray(a, ++i);
+        }
+        return 0;
+    }
+
+    // ESERCIZIO #3 10/11 //
+    public int contaZeri(int[] a, int i) {
+        if (i<a.length) {
+            if (a[i] == 0) return 1 + contaZeri(a, ++i);
+            return contaZeri(a, ++i);
         }
         return 0;
     }
